@@ -85,7 +85,6 @@ body {
 }
 .contact__list {
   font-style: none;
-
 }
 /* navigation link and contact link text */
 .nav__link,
@@ -140,6 +139,8 @@ body {
 */
 .footer__container .contact__item {
   color: var(--first-color);
+  font-weight: 400;
+  font-style: normal;
 }
 /* 
   footer contact text 
@@ -147,6 +148,8 @@ body {
 */
 .footer__container .contact__link {
   color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* 
@@ -355,6 +358,62 @@ body {
 */
 .projects__category {
   color: var(--third-color);
-  font-size: var(--first-color);
+  font-size: var(--text-size);
   line-height: var(--second-line-height);
+}
+
+/* 
+
+=====================================
+
+           POSITIONING
+
+=====================================
+
+*/
+/*
+  HEADER
+*/
+
+h1, h2, h6, ul, li, a {
+  padding: 0;
+  margin: 0;
+}
+.header__container {
+  position: relative;
+  align-items: center;
+}
+
+.nav__item {
+  display: inline-block;
+}
+
+.header__container .contact__list {
+position: absolute;
+right: 0;
+}
+.header__container .contact__item {
+  display: inline-block;
+}
+/*
+  FOOTER
+*/
+
+.footer__container .contact__list{
+  position: absolute;
+  left: 0;
+  
+  padding-left: 0;
+  margin: 15px 0;
+}
+.footer__container .contact__item {
+  display: flex;
+}
+
+.container {
+  width: 1170px;
+  padding: 0 15px 0 15px;
+  background-color: #000000;
+  text-align: center;
+  margin: auto;
 }
