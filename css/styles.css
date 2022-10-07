@@ -1,0 +1,552 @@
+/***************
+*   VARIABLES  *
+***************/
+:root {
+  --first-color: #ffffff;
+  --second-color: #2196f3;
+  --third-color: #757575;
+  --fourth-color: #f5f4fa;
+
+  --fifth-color: #212121;
+  --text-size: 16px;
+
+  --first-line-height: 1.7;
+  --second-line-height: 1.9;
+
+  --first-weight: 500;
+  --second-weight: 700;
+
+  --radius: 4px;
+
+  --first-letter-spacing: 0.06em;
+  --second-letter-spacing: 0.03em;
+
+  --border: 1px solid #eeeeee;
+}
+
+/**********
+* GENERAL *
+**********/
+h1,
+h2,
+h6,
+ul,
+li,
+a,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  color: var(--fifth-color);
+  font-size: 14px;
+  font-family: "Roboto", "Raleway", sans-serif;
+}
+
+/********************
+* FOR ALL LIST ITEM *
+********************/
+.item {
+  list-style: none;
+}
+
+/***************
+* FOR ALL LINK *
+***************/
+.link {
+  text-decoration: none;
+}
+
+/* 
+
+=====================================
+
+        GENERAL TEXT STYLE
+      FOR INDEX AND PORTFOLIO
+
+=====================================
+
+*/
+
+/* 
+
+*************************************
+
+          HEADER SECTION
+
+*************************************
+
+*/
+
+/* logo link */
+.logo__link {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: var(--second-weight);
+  line-height: 1.2;
+  font-style: normal;
+  letter-spacing: var(--second-letter-spacing);
+  color: #000000;
+  padding-right: 93px;
+}
+/* span color */
+.logo__link .logo__web {
+  color: var(--second-color);
+}
+/* Header container */
+.header__container {
+  background: var(--first-color);
+  border: 1px solid #ececec;
+  height: 80px;
+  width: 100%;
+  display: flex;
+}
+.contact__list {
+  font-style: none;
+}
+/*
+  linear position all navigation links 
+*/
+.nav__item {
+  display: inline;
+  padding: 23px;
+}
+/* navigation link and contact link text */
+.nav__link,
+.contact__link {
+  color: var(--fifth-color);
+  font-weight: var(--first-weight);
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+}
+/* change the color of the link text when the user is on the page that corresponds to the link from the navigation */
+.active__link {
+  color: var(--second-color);
+}
+/* navigation link nad contact link color 
+  when user hover or focused then color has will change */
+.nav__link:hover,
+.nav__link:focus,
+.contact__link:hover,
+.contact__link:focus {
+  color: var(--second-color);
+}
+
+/* contact link color text  */
+.contact__link {
+  color: var(--third-color);
+}
+
+/* 
+  container with contact links 
+  email and phone-number are right of the .container
+*/
+.header__container .container .contact__container {
+  display: flex;
+  /* if you wanna positioning contact container to the right */
+  margin-left: auto;
+}
+.header__container .container,
+.footer__container .container {
+  padding: 0;
+}
+.header__container .container .contact__container .contact__list {
+  display: flex;
+  gap: 50px;
+}
+/*
+  use this if you wanna contact items in linear position 
+*/
+.header__container .container .contact__list .contact__item {
+  display: inline-flex;
+}
+/* 
+  container with logo, navigation and contacts
+*/
+.header__container .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* 
+
+=====================================
+
+      GENERAL POSITION STYLE
+      FOR INDEX AND PORTFOLIO
+
+=====================================
+
+*/
+/*
+  class to position main content into all html pages
+*/
+.container {
+  height: 100%;
+  width: 1170px;
+  margin: auto;
+  padding: 94px 0;
+}
+/****************************
+  global class 
+  main container to all items
+****************************/
+.list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+/* 
+
+*************************************
+
+          FOOTER SECTION
+
+*************************************
+
+*/
+/* footer container */
+.footer__container {
+  background: #2f303a;
+  /* position footer */
+  position: relative;
+  height: 252px;
+}
+/* 
+  footer logo 
+  white color of the logo 
+  is only in footer of the container
+*/
+.footer__container .logo__link {
+  color: var(--first-color);
+}
+/*
+  position footer logo container
+*/
+.footer__container .logo__container {
+  display: flex;
+  padding-bottom: 20px;
+}
+/*
+  position contact list in footer container
+*/
+.footer__container .contact__list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding-left: 0;
+}
+/* 
+  footer contact text 
+  white color with alpha is for contact__links in footer container
+*/
+.footer__container .contact__link {
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: var(--second-letter-spacing);
+  font-weight: 400;
+  font-style: normal;
+  line-height: var(--first-line-height);
+}
+/* 
+  footer contact item list 
+  white color of the contact name 
+  is only for first contact__item in footer container
+*/
+.footer__container .contact__item {
+  color: var(--first-color);
+  letter-spacing: var(--second-letter-spacing);
+  font-weight: 400;
+  font-style: normal;
+  line-height: var(--first-line-height);
+}
+/*
+  use this if you wanna footer items in column position 
+*/
+.footer__container .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* 
+
+=====================================
+
+            INDEX.HTML
+
+=====================================
+
+*/
+
+/* 
+
+*************************************
+
+          CONTAINER WITH 
+         TITLE AND BUTTON
+
+*************************************
+
+*/
+/* 
+  container containing 
+  main title and button
+ */
+.title__container {
+  /* background color of title container */
+  background: #2f303a;
+  /* positioning title container*/
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+/*
+  main title 
+*/
+.title__page {
+  color: var(--first-color);
+  letter-spacing: var(--first-letter-spacing);
+  text-transform: uppercase;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.4;
+  padding: 30px;
+}
+/* 
+  button 
+*/
+.title__button {
+  font-family: "Roboto";
+  background: var(--second-color);
+  border-style: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: var(--radius);
+  color: var(--first-color);
+  font-weight: var(--second-weight);
+  line-height: var(--second-line-height);
+  letter-spacing: var(--first-letter-spacing);
+  cursor: pointer;
+
+  padding: 10px 42px;
+}
+
+/* 
+
+*************************************
+
+        CONTAINER WITH FEATURES
+       (FOR NOW HAS LOREM IPSUM)
+
+*************************************
+
+*/
+/* 
+  feature heading text (lorem ipsum)
+*/
+.feature__text {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: var(--second-letter-spacing);
+  text-transform: uppercase;
+}
+/* 
+  feature paragraph text (lorem ipsum...)
+*/
+.feature__description {
+  color: var(--third-color);
+  line-height: var(--first-line-height);
+  letter-spacing: var(--second-letter-spacing);
+}
+/*
+  positioning feature container and feature box
+*/
+.feature__container {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 94px;
+}
+/*
+  space beetwen heading and description text
+*/
+.feature__container .feature__box .feature__text {
+  padding-bottom: 10px;
+}
+/* 
+
+*************************************
+
+     CONTAINER WITH ABOUT SECTION
+          (EMPTY FOR NOW)
+
+*************************************
+
+*/
+/* 
+  about and team heading text
+  have the same font styles  
+*/
+.about__text,
+.team__text {
+  padding-bottom: 50px;
+  font-size: 36px;
+  font-weight: var(--second-weight);
+  line-height: 1.16;
+  letter-spacing: var(--second-letter-spacing);
+
+  text-align: center;
+}
+
+/* 
+
+*************************************
+
+        CONTAINER WITH TEAM
+
+*************************************
+
+*/
+/* 
+  main team container
+  it has all the tags with the team and heading
+*/
+.team__container {
+  width: 100%;
+  background: var(--fourth-color);
+  text-align: center;
+}
+/* 
+  one div with all team card
+*/
+.team__box {
+  display: inline-flex;
+}
+/*
+  team card with image, 
+  team name and team profession 
+*/
+.team__card {
+  background: var(--first-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: 270px;
+}
+/* 
+  tag with the image of one person from the team
+  width and height are styled in html 
+*/
+.team__image {
+  border-radius: 0px;
+}
+/* 
+  team heading text 
+*/
+.team__name {
+  font-size: var(--first-color);
+  font-weight: var(--first-weight);
+  line-height: var(--first-line-height);
+  letter-spacing: var(--second-letter-spacing);
+  text-align: center;
+}
+/* 
+  team paragraph text 
+*/
+.team__profession {
+  font-size: var(--first-color);
+  line-height: var(--first-line-height);
+  color: var(--third-color);
+  letter-spacing: var(--second-letter-spacing);
+  text-align: center;
+}
+
+/* 
+
+=====================================
+
+           PORTFOLIO.HTML
+
+=====================================
+
+*/
+/*
+  positioning buttons to center 
+*/
+.container .filters__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* 
+  buttons with category
+*/
+.filters__button {
+  background: var(--fourth-color);
+  border-radius: var(--radius);
+  border-style: none;
+  color: #212121;
+  font-size: var(--text-size);
+  font-family: "Roboto";
+  font-weight: var(--first-weight);
+  letter-spacing: var(--second-letter-spacing);
+  line-height: 1.6;
+  cursor: pointer;
+  padding: 6px 22px;
+}
+/* 
+  change color and add shadow to buttons
+  when user hover or focus them
+*/
+.filters__button:hover,
+.filters__button:focus {
+  color: var(--first-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  background: var(--second-color);
+}
+/*
+  buttons display 
+*/
+.filters__item {
+  display: inline-flex;
+  padding: 4px;
+  padding-bottom: 50px;
+}
+/* 
+  projects heading 
+*/
+.projects__name {
+  font-size: 18px;
+  line-height: 2;
+  font-style: normal;
+  letter-spacing: var(--first-letter-spacing);
+}
+/* 
+  projects paragraph 
+*/
+.projects__category {
+  margin: 0;
+  color: var(--third-color);
+  font-size: var(--text-size);
+  line-height: var(--second-line-height);
+  letter-spacing: var(--second-letter-spacing);
+}
+/*
+  border and positioning projects text (name and category)
+*/
+.projects__text {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 20px 24px;
+  gap: 4px;
+  border-bottom: var(--border);
+  border-left: var(--border);
+  border-right: var(--border);
+}
