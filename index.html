@@ -16,48 +16,56 @@
     <!-- start header -->
     <header class="header__container">
       <!-- start logo -->
-      <div class="logo__container">
-        <a href="./index.html" class="logo__link link"
-          ><span class="logo__web">Web</span>Studio</a
-        >
-      </div>
-      <!-- end logo -->
-      <!-- start navigation -->
-      <nav class="nav__container">
-        <ul class="nav__list">
-          <li class="nav__item item">
-            <a
-              class="nav__link link active__link"
-              href="./index.html"
-              id="agency"
-              >Agencja</a
-            >
-          </li>
-          <li class="nav__item item">
-            <a class="nav__link link" href="./portfolio.html" id="portfolio"
-              >Portfolio</a
-            >
-          </li>
-          <li class="nav__item item">
-            <a class="nav__link link" href="#" id="contact">Kontakt</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- end navigation -->
-      <!-- start contact container: telephone and email  -->
-      <div class="contact__container">
-        <ul class="contact__list">
-          <li class="contact__item item">
-            <a class="contact__link link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contact__item item">
-            <a class="contact__link link" href="tel:+48111111111"
-              >+48 111 111 111</a
-            >
-          </li>
-        </ul>
+      <!--
+        height: 100%;
+        width: 1170px;
+        margin: auto;
+        padding: 94px 0;
+       -->
+      <div class="container">
+        <div class="logo__container">
+          <a href="./index.html" class="logo__link link"
+            ><span class="logo__web">Web</span>Studio</a
+          >
+        </div>
+        <!-- end logo -->
+        <!-- start navigation -->
+        <nav class="nav__container">
+          <ul class="nav__list">
+            <li class="nav__item item">
+              <a
+                class="nav__link link active__link"
+                href="./index.html"
+                id="agency"
+                >Agencja</a
+              >
+            </li>
+            <li class="nav__item item">
+              <a class="nav__link link" href="./portfolio.html" id="portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav__item item">
+              <a class="nav__link link" href="#" id="contact">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- end navigation -->
+        <!-- start contact container: telephone and email  -->
+        <div class="contact__container">
+          <ul class="contact__list">
+            <li class="contact__item item">
+              <a class="contact__link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact__item item">
+              <a class="contact__link link" href="tel:+48111111111"
+                >+48 111 111 111</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
       <!-- end contact container -->
     </header>
@@ -66,35 +74,44 @@
     <main>
       <!-- button -->
       <div class="title__container">
-        <h1 class="title__page">Efektywne rozwiązania dla waszego biznesu</h1>
+        <h1 class="title__page">
+          Efektywne rozwiązania <br />dla waszego biznesu
+        </h1>
         <button class="title__button" type="button">Zamów usługę</button>
       </div>
       <!-- container with main center content -->
+
+      <!-- start feature container: simple description about the webstudio -->
+      <!--
+        height: 100%;
+        width: 1170px;
+        margin: auto;
+        padding: 94px 0;
+       -->
       <div class="container">
-        <!-- start feature container: simple description about the webstudio -->
         <div class="feature__container">
-          <div class="feature__box" id="feature__one">
+          <div class="feature__box">
             <h6 class="feature__text">lorem ipsum</h6>
             <p class="feature__description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </div>
-          <div class="feature__box" id="feature__two">
+          <div class="feature__box">
             <h6 class="feature__text">lorem ipsum</h6>
             <p class="feature__description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </div>
-          <div class="feature__box" id="feature__three">
+          <div class="feature__box">
             <h6 class="feature__text">lorem ipsum</h6>
             <p class="feature__description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </div>
-          <div class="feature__box" id="feature__four">
+          <div class="feature__box">
             <h6 class="feature__text">lorem ipsum</h6>
             <p class="feature__description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -102,87 +119,99 @@
             </p>
           </div>
         </div>
+
         <!-- end feature container -->
         <!-- start about container: what the webstudio do -->
+
         <div class="about__container">
           <h2 class="about__text">Czym się zajmujemy</h2>
-          <div class="about__box">
-            <img
-              class="about__image"
-              src="./images/main_page/features/image_tablet.jpg"
-              alt="tablet"
-              width="370"
-              height="294"
-            />
-          </div>
-          <div class="about__box">
-            <img
-              class="about__image"
-              src="./images/main_page/features/image_phone.jpg"
-              alt="phone"
-              width="370"
-              height="294"
-            />
-          </div>
-          <div class="about__box">
-            <img
-              class="about__image"
-              src="./images/main_page/features/image_computer.jpg"
-              alt="computer"
-              width="370"
-              height="294"
-            />
+          <div class="list">
+            <div class="about__box">
+              <img
+                class="about__image"
+                src="./images/main_page/features/image_tablet.jpg"
+                alt="tablet"
+                width="370"
+                height="294"
+              />
+            </div>
+            <div class="about__box">
+              <img
+                class="about__image"
+                src="./images/main_page/features/image_phone.jpg"
+                alt="phone"
+                width="370"
+                height="294"
+              />
+            </div>
+            <div class="about__box">
+              <img
+                class="about__image"
+                src="./images/main_page/features/image_computer.jpg"
+                alt="computer"
+                width="370"
+                height="294"
+              />
+            </div>
           </div>
         </div>
         <!-- end about container -->
       </div>
       <!-- start team container: include images and names -->
       <div class="team__container">
-        <h2 class="team__text">Nasz zespół</h2>
-        <div class="team__box">
-          <div class="team__card" id="card__one">
-            <img
-              class="team__image"
-              src="./images/main_page/team/image_product_designer.jpg"
-              alt="image of Product Designer"
-              width="270"
-              height="260"
-            />
-            <h6 class="team__name">John Doe</h6>
-            <h6 class="team__profession">Product Designer</h6>
-          </div>
-          <div class="team__card" id="card__two">
-            <img
-              class="team__image"
-              src="./images/main_page/team/image_frontend_developer.jpg"
-              alt="image of Frontend Developer"
-              width="270"
-              height="260"
-            />
-            <h6 class="team__name">John Doe</h6>
-            <h6 class="team__profession">Frontend Developer</h6>
-          </div>
-          <div class="team__card" id="card__three">
-            <img
-              class="team__image"
-              src="./images/main_page/team/image_marketing.jpg"
-              alt="image of Marketing"
-              width="270"
-              height="260"
-            />
-            <h6 class="team__name">John Doe</h6>
-            <h6 class="team__profession">Marketing</h6>
-          </div>
-          <div class="team__card" id="card__four">
-            <img
-              class="team__image"
-              src="./images/main_page/team/image_ui_designer.jpg"
-              alt="image of UI Designer"
-              width="270"
-              height="260"
-            />
-            <h6 class="team__name">John Doe</h6>
-            <h6 class="team__profession">UI Designer</h6>
+        <!--
+        height: 100%;
+        width: 1170px;
+        margin: auto;
+        padding: 94px 0;
+       -->
+        <div class="container">
+          <h2 class="team__text">Nasz zespół</h2>
+          <div class="team__box list">
+            <div class="team__card" id="card__one">
+              <img
+                class="team__image"
+                src="./images/main_page/team/image_product_designer.jpg"
+                alt="image of Product Designer"
+                width="270"
+                height="260"
+              />
+              <h6 class="team__name">John Doe</h6>
+              <h6 class="team__profession">Product Designer</h6>
+            </div>
+            <div class="team__card" id="card__two">
+              <img
+                class="team__image"
+                src="./images/main_page/team/image_frontend_developer.jpg"
+                alt="image of Frontend Developer"
+                width="270"
+                height="260"
+              />
+              <h6 class="team__name">John Doe</h6>
+              <h6 class="team__profession">Frontend Developer</h6>
+            </div>
+            <div class="team__card" id="card__three">
+              <img
+                class="team__image"
+                src="./images/main_page/team/image_marketing.jpg"
+                alt="image of Marketing"
+                width="270"
+                height="260"
+              />
+              <h6 class="team__name">John Doe</h6>
+              <h6 class="team__profession">Marketing</h6>
+            </div>
+            <div class="team__card" id="card__four">
+              <img
+                class="team__image"
+                src="./images/main_page/team/image_ui_designer.jpg"
+                alt="image of UI Designer"
+                width="270"
+                height="260"
+              />
+              <h6 class="team__name">John Doe</h6>
+              <h6 class="team__profession">UI Designer</h6>
+            </div>
           </div>
         </div>
       </div>
@@ -191,30 +220,38 @@
     <!-- end main -->
     <!-- start footer -->
     <footer class="footer__container">
-      <!-- logo -->
-      <div class="logo__container">
-        <a href="./index.html" class="logo__link link"
-          ><span class="logo__web">Web</span>Studio</a
-        >
+      <!--
+        height: 100%;
+        width: 1170px;
+        margin: auto;
+        padding: 94px 0;
+       -->
+      <div class="container">
+        <!-- logo -->
+        <div class="logo__container">
+          <a href="./index.html" class="logo__link link"
+            ><span class="logo__web">Web</span>Studio</a
+          >
+        </div>
+        <!-- address to coresponde -->
+        <address class="contact__footer">
+          <ul class="contact__list">
+            <li class="contact__item item">
+              m. Warszawa, Aleje Jerozolimskie 21
+            </li>
+            <li class="contact__item item">
+              <a class="contact__link link" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li class="contact__item item">
+              <a class="contact__link link" href="tel:+48111111111"
+                >+48 111 111 111</a
+              >
+            </li>
+          </ul>
+        </address>
       </div>
-      <!-- address to coresponde -->
-      <address class="contact__footer">
-        <ul class="contact__list">
-          <li class="contact__item item">
-            m. Warszawa, Aleje Jerozolimskie 21
-          </li>
-          <li class="contact__item item">
-            <a class="contact__link link" href="mailto:info@example.com"
-              >info@example.com</a
-            >
-          </li>
-          <li class="contact__item item">
-            <a class="contact__link link" href="tel:+48111111111"
-              >+48 111 111 111</a
-            >
-          </li>
-        </ul>
-      </address>
     </footer>
     <!-- end footer -->
   </body>
