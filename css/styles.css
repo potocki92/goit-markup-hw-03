@@ -296,15 +296,13 @@ body {
 .title__container {
   /* background color of title container */
   background: #2f303a;
-  /* size */
-  width: 100%;
-  height: 600px;
   /* positioning text and button into title container*/
   display: flex;
   flex-flow: column;
   text-align: center;
   justify-content: center;
   align-items: center;
+  padding: 200px;
 }
 /*
   main title 
