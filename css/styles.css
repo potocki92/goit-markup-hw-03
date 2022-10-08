@@ -38,7 +38,6 @@ p {
   padding: 0;
   margin: 0;
 }
-
 body {
   padding: 0;
   margin: 0;
@@ -102,7 +101,6 @@ body {
 .header__container {
   background: var(--first-color);
   border-bottom: 1px solid #ececec;
-  height: 80px;
   display: flex;
 }
 .contact__list {
@@ -113,7 +111,7 @@ body {
 */
 .nav__item {
   display: inline;
-  padding: 23px;
+  padding: 0 23px;
 }
 /* navigation link and contact link text */
 .nav__link,
@@ -150,9 +148,12 @@ body {
   /* if you wanna positioning contact container to the right */
   margin-left: auto;
 }
-.header__container .container,
+.header__container .container {
+  padding: 20px 0;
+}
 .footer__container .container {
-  padding: 0;
+  padding: 60px 0;
+  gap: 20px;
 }
 .header__container .container .contact__container .contact__list {
   display: flex;
@@ -187,7 +188,6 @@ body {
   class to position main content into all html pages
 */
 .container {
-  height: 100%;
   width: 1170px;
   margin: auto;
   padding: 94px 0;
@@ -215,7 +215,6 @@ body {
   background: #2f303a;
   /* position footer */
   position: relative;
-  height: 252px;
 }
 /* 
   footer logo 
@@ -230,7 +229,6 @@ body {
 */
 .footer__container .logo__container {
   display: flex;
-  padding-bottom: 20px;
 }
 /*
   position contact list in footer container
@@ -239,7 +237,6 @@ body {
   display: flex;
   flex-flow: column;
   gap: 9px;
-  padding-left: 0;
 }
 /* 
   footer contact text 
@@ -374,7 +371,7 @@ body {
 .feature__container {
   display: flex;
   gap: 30px;
-  padding-bottom: 94px;
+  margin-bottom: 94px;
 }
 /*
   space beetwen heading and description text
@@ -494,6 +491,9 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.filters__list {
+  font-size: 0;
+}
 /* 
   buttons with category
 */
@@ -529,8 +529,7 @@ body {
 */
 .filters__item {
   display: inline-flex;
-  padding: 4px;
-  padding-bottom: 50px;
+  margin: 0 4px 50px;
 }
 /* 
   projects heading 
@@ -562,8 +561,10 @@ body {
   border-right: var(--border);
 }
 /*
-  to merge two tags projects__image and projects__text (without space)
+  remove font-size from ul
 */
-.projects__item {
+.projects__item,
+.about__box,
+.team__card {
   font-size: 0;
 }
