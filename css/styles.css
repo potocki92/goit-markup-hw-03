@@ -190,6 +190,9 @@ body {
 .container {
   width: 1170px;
   margin: auto;
+}
+
+.section {
   padding: 94px 0;
 }
 /*
