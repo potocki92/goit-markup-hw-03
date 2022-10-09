@@ -15,6 +15,7 @@
 
   --first-weight: 500;
   --second-weight: 700;
+  --third-weight: 400;
 
   --radius: 4px;
 
@@ -37,7 +38,6 @@ p {
   padding: 0;
   margin: 0;
 }
-
 body {
   padding: 0;
   margin: 0;
@@ -62,14 +62,14 @@ body {
 }
 
 /* 
-
+=====================================
 =====================================
 
         GENERAL TEXT STYLE
       FOR INDEX AND PORTFOLIO
 
 =====================================
-
+=====================================
 */
 
 /* 
@@ -100,9 +100,7 @@ body {
 /* Header container */
 .header__container {
   background: var(--first-color);
-  border: 1px solid #ececec;
-  height: 80px;
-  width: 100%;
+  border-bottom: 1px solid #ececec;
   display: flex;
 }
 .contact__list {
@@ -113,7 +111,7 @@ body {
 */
 .nav__item {
   display: inline;
-  padding: 23px;
+  padding: 0 23px;
 }
 /* navigation link and contact link text */
 .nav__link,
@@ -150,9 +148,12 @@ body {
   /* if you wanna positioning contact container to the right */
   margin-left: auto;
 }
-.header__container .container,
+.header__container .container {
+  padding: 20px 0;
+}
 .footer__container .container {
-  padding: 0;
+  padding: 60px 0;
+  gap: 20px;
 }
 .header__container .container .contact__container .contact__list {
   display: flex;
@@ -174,28 +175,30 @@ body {
 }
 
 /* 
-
+=====================================
 =====================================
 
       GENERAL POSITION STYLE
       FOR INDEX AND PORTFOLIO
 
 =====================================
-
+=====================================
 */
 /*
   class to position main content into all html pages
 */
 .container {
-  height: 100%;
   width: 1170px;
   margin: auto;
+}
+
+.section {
   padding: 94px 0;
 }
-/****************************
+/*
   global class 
-  main container to all items
-****************************/
+  main container to all list with images
+*/
 .list {
   display: flex;
   gap: 30px;
@@ -215,7 +218,6 @@ body {
   background: #2f303a;
   /* position footer */
   position: relative;
-  height: 252px;
 }
 /* 
   footer logo 
@@ -230,16 +232,14 @@ body {
 */
 .footer__container .logo__container {
   display: flex;
-  padding-bottom: 20px;
 }
 /*
   position contact list in footer container
 */
 .footer__container .contact__list {
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   gap: 9px;
-  padding-left: 0;
 }
 /* 
   footer contact text 
@@ -248,7 +248,7 @@ body {
 .footer__container .contact__link {
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: var(--second-letter-spacing);
-  font-weight: 400;
+  font-weight: var(--third-weight);
   font-style: normal;
   line-height: var(--first-line-height);
 }
@@ -260,7 +260,7 @@ body {
 .footer__container .contact__item {
   color: var(--first-color);
   letter-spacing: var(--second-letter-spacing);
-  font-weight: 400;
+  font-weight: var(--third-weight);
   font-style: normal;
   line-height: var(--first-line-height);
 }
@@ -269,17 +269,17 @@ body {
 */
 .footer__container .container {
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   justify-content: center;
 }
 /* 
-
+=====================================
 =====================================
 
             INDEX.HTML
 
 =====================================
-
+=====================================
 */
 
 /* 
@@ -299,14 +299,13 @@ body {
 .title__container {
   /* background color of title container */
   background: #2f303a;
-  /* positioning title container*/
-  width: 100%;
-  height: 600px;
+  /* positioning text and button into title container*/
   display: flex;
   flex-flow: column;
   text-align: center;
   justify-content: center;
   align-items: center;
+  padding: 200px;
 }
 /*
   main title 
@@ -324,17 +323,19 @@ body {
   button 
 */
 .title__button {
-  font-family: "Roboto";
+  /* color and border of button */
   background: var(--second-color);
   border-style: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: var(--radius);
+  /* text into bottom */
   color: var(--first-color);
+  font-family: "Roboto";
   font-weight: var(--second-weight);
   line-height: var(--second-line-height);
   letter-spacing: var(--first-letter-spacing);
+  /* other */
   cursor: pointer;
-
   padding: 10px 42px;
 }
 
@@ -371,7 +372,7 @@ body {
 .feature__container {
   display: flex;
   gap: 30px;
-  padding-bottom: 94px;
+  margin-bottom: 94px;
 }
 /*
   space beetwen heading and description text
@@ -393,15 +394,17 @@ body {
   about and team heading text
   have the same font styles  
 */
-.about__text,
-.team__text {
-  padding-bottom: 50px;
+.about__title,
+.team__title {
+  /* font style */
   font-size: 36px;
   font-weight: var(--second-weight);
   line-height: 1.16;
   letter-spacing: var(--second-letter-spacing);
-
+  /* center title */
   text-align: center;
+  /* other */
+  padding-bottom: 50px;
 }
 
 /* 
@@ -418,9 +421,7 @@ body {
   it has all the tags with the team and heading
 */
 .team__container {
-  width: 100%;
   background: var(--fourth-color);
-  text-align: center;
 }
 /* 
   one div with all team card
@@ -434,47 +435,54 @@ body {
 */
 .team__card {
   background: var(--first-color);
+  /* shadow under the containers with a photo, 
+     name and profession of the team 
+  */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: 270px;
 }
-/* 
-  tag with the image of one person from the team
-  width and height are styled in html 
+/*
+  container with heading and paragraph text about team
 */
-.team__image {
-  border-radius: 0px;
+.team__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 0 30px 0;
 }
 /* 
   team heading text 
 */
 .team__name {
-  font-size: var(--first-color);
+  font-size: var(--text-size);
   font-weight: var(--first-weight);
-  line-height: var(--first-line-height);
+  line-height: 1.187;
   letter-spacing: var(--second-letter-spacing);
+  /* center text */
   text-align: center;
 }
 /* 
   team paragraph text 
 */
 .team__profession {
-  font-size: var(--first-color);
-  line-height: var(--first-line-height);
   color: var(--third-color);
+  font-size: var(--text-size);
+  font-weight: var(--third-weight);
+  line-height: var(--first-line-height);
   letter-spacing: var(--second-letter-spacing);
+  /* center text */
   text-align: center;
 }
 
 /* 
-
+=====================================
 =====================================
 
            PORTFOLIO.HTML
 
 =====================================
-
+=====================================
 */
 /*
   positioning buttons to center 
@@ -484,19 +492,25 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.filters__list {
+  font-size: 0;
+}
 /* 
   buttons with category
 */
 .filters__button {
+  /* button color and border */
   background: var(--fourth-color);
   border-radius: var(--radius);
   border-style: none;
+  /* font style */
   color: #212121;
   font-size: var(--text-size);
   font-family: "Roboto";
   font-weight: var(--first-weight);
   letter-spacing: var(--second-letter-spacing);
   line-height: 1.6;
+  /* other */
   cursor: pointer;
   padding: 6px 22px;
 }
@@ -516,8 +530,7 @@ body {
 */
 .filters__item {
   display: inline-flex;
-  padding: 4px;
-  padding-bottom: 50px;
+  margin: 0 4px 50px;
 }
 /* 
   projects heading 
@@ -525,14 +538,12 @@ body {
 .projects__name {
   font-size: 18px;
   line-height: 2;
-  font-style: normal;
   letter-spacing: var(--first-letter-spacing);
 }
 /* 
   projects paragraph 
 */
 .projects__category {
-  margin: 0;
   color: var(--third-color);
   font-size: var(--text-size);
   line-height: var(--second-line-height);
@@ -549,4 +560,12 @@ body {
   border-bottom: var(--border);
   border-left: var(--border);
   border-right: var(--border);
+}
+/*
+  remove font-size from ul
+*/
+.projects__item,
+.about__box,
+.team__card {
+  font-size: 0;
 }
