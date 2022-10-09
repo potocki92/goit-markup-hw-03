@@ -309,6 +309,11 @@ body {
 .title__container {
   /* background color of title container */
   background: #2f303a;
+  /*
+    to center the text and button when zoomed in
+  */
+  display: flex;
+  flex-flow: column;
   /* positioning text and button into title container*/
   text-align: center;
   justify-content: center;
