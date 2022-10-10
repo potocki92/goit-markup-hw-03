@@ -1,8 +1,3 @@
-/*
-  NAPRAWIC FLEX I FLEX-BASIS (PRAWDOPODOBNIE PROBLEM Z WIDTH 1200px W CONTAINER)
-
-*/
-
 /***************
 *   VARIABLES  *
 ***************/
@@ -112,9 +107,6 @@ body {
   background: var(--first-color);
   border-bottom: 1px solid #ececec;
 }
-.contact__list {
-  font-style: none;
-}
 /*
   overwritting gap from the list class
 */
@@ -162,6 +154,8 @@ body {
 .header__container .container {
   padding: 20px 0;
 }
+
+
 /*
   footer padding and gap to flex list class and logo__container
   space bettween top and bottom 
